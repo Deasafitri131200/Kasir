@@ -508,7 +508,7 @@ public class kasir extends javax.swing.JFrame {
             String sql = "insert into tb_penjualan values('"+txt_no_nota.getText()+"','"+txt_tgl_Pesanan.getText()
                     +"','"+txt_nama_pelangan.getText()+"','"+ComboBox_Pesanan.getSelectedItem()+"','"+txt_harga.getText()+"','"+txt_jumlahPesanan.getText()+"','"+txt_jumlah_harga.getText()+"')";
             int row = st.executeUpdate(sql);
-            
+            hapusAll();
             if (row==1){
                 JOptionPane.showMessageDialog(null, "Data sudah di Simpan ","informasi",JOptionPane.INFORMATION_MESSAGE);
                 con.close();
